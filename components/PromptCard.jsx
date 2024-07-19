@@ -29,7 +29,7 @@ const PromptCard = ({post , handleTagClick ,
         <div className='flex-1 flex justify-start 
           items-center gap-3 cursor-pointer ' 
           >
-             <Link href={session.user.id !== id ?`/profile/${id}` : '#'}>
+             <Link href={session?.user.id !== id ?`/profile/${id}` : '#'}>
             
           <Image
             src={post.creator.image}
